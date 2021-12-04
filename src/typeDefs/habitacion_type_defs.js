@@ -11,7 +11,7 @@ input HabitacionInput {
 }
 
 type HabitacionDetail {
-    idHabitacion: Int!
+    
     tipoHabitacion: String!
     capacidadHabitacion: Int!
     costoHabitacion: Int!
@@ -28,7 +28,7 @@ type Query {
     
 }
 type Mutation {
-    createHabitacion(habitacion: HabitacionInput!): HabitacionDetail
+    createHabitacion(habitacion: HabitacionInput!): HabitacionDetail!
 
 
 }`;
