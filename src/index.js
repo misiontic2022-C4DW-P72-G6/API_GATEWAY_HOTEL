@@ -3,6 +3,7 @@ const typeDefs = require('./typeDefs');
 const resolvers = require('./resolvers');
 const AuthAPI = require('./dataSources/auth_api');
 const CatalogoAPI = require('./dataSources/catalogo_api');
+const HabitacionAPI = require('./dataSources/habitacion_api');
 const authentication = require('./utils/authentication');
 
 const server = new ApolloServer({
@@ -12,6 +13,7 @@ const server = new ApolloServer({
     dataSources: () => ({
         authAPI: new AuthAPI(),
         catalogoAPI: new CatalogoAPI(),
+        habitacionAPI: new HabitacionAPI(),
         
     }),
     introspection: true,

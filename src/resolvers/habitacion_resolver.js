@@ -5,7 +5,7 @@ const habitacionResolver = {
             console.log(idHabitacion);
             let dato = dataSources.catalogoAPI.getHabitacion(idHabitacion)
             console.log(dato)
-            return dataSources.catalogoAPI.getHabitacion(idHabitacion)
+            return dataSources.habitacionAPI.getHabitacion(idHabitacion)
         },
     },
    
