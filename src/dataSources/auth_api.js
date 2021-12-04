@@ -11,14 +11,10 @@ class AuthAPI extends RESTDataSource {
         return await this.post(`/usuarios/`, usuario);
     }
     async getUser(userId) {
-        console.log("*****************++++++++++++++++++++++++++++++++");
-        console.log(userId);
         return await this.get(`/usuarios/${userId}/`);
     }
     async authRequest(credentials) {
         credentials = new Object(JSON.parse(JSON.stringify(credentials)));
-        console.log("*****************++++++++++++++++++++++++++++++++");
-        console.log(credentials);
         return await this.post(`/login/`, credentials);
     }
     async refreshToken(token) {
