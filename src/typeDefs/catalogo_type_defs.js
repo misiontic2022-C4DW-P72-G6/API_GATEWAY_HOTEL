@@ -27,6 +27,7 @@ input CredentialsInput {
 type Query {
     catalogoDetailById(catalogoId: Int!): CatalogoDetail
 }
+
 type Mutation {
     createCatalogo(catalogo: CatalogoInput!): CatalogoDetail
 }`;

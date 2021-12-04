@@ -16,6 +16,16 @@ class CatalogoAPI extends RESTDataSource {
         return await this.get(`/catalogo/${catalogoId}/`);
     }
 
+    async createHabitacion(habitacion) {
+        habitacion = new Object(JSON.parse(JSON.stringify(habitacion)));
+        return await this.post(`/habitacion/`, habitacion);
+    }
+    async getHabitacion(idHabitacion) {
+        console.log("zzzzzzzzzzzzzzz");
+        console.log(idHabitacion);
+        return await this.get(`/habitacion/${idHabitacion}/`);
+    }
+
 
 
 }
