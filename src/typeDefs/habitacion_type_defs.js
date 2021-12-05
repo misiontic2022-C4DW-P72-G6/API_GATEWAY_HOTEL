@@ -24,11 +24,6 @@ type HabitacionDetail {
 type Query {
     habitacionDetailById(idHabitacion: Int!): HabitacionDetail!
     
-}
-type Mutation {
-    createHabitacion(habitacion: HabitacionInput!): HabitacionDetail!
-
-
 }`;
 
 
