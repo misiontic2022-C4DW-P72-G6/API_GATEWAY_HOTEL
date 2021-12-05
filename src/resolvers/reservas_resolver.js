@@ -7,24 +7,25 @@ const reservasResolver = {
                return  resultado
         },
     },
-    /*
+    
     Mutation: {
-        createReservas: async(_, { reservaInput }, { dataSources }) => {
-            console.log("entra create "+reservaInput.idReserva)
-            const ReservarInput ={
-                idReserva: reservaInput.idReserva,
-                nombrecuentaUsuario: reservaInput.nombrecuentaUsuario,
-                fechaReserva: reservaInput.fechaReserva,
-                fechaInicio: reservaInput.fechaInicio,
-                fechaFin: reservaInput.fechaFin,
-                personas: reservaInput.personas,
-                idHotel: reservaInput.idHotel,
-                estado: reservaInput.estado,
-                mediodePago: reservaInput.mediodePago,}
+        crearReserva: async(_, { reserva }, { dataSources }) => {
+            const reservaInput ={
+                idReserva: reserva.idReserva,
+                nombrecuentaUsuario: reserva.nombrecuentaUsuario,
+                fechaReserva: reserva.fechaReserva,
+                fechaInicio: reserva.fechaInicio,
+                fechaFin: reserva.fechaFin,
+                personas: reserva.personas,
+                idHotel: reserva.idHotel,
+                estado: reserva.estado,
+                habitacion:reserva.habitacion,
+                medioPago: reserva.medioPago,
+            }
 
-            return await dataSources.reservas_api.createReserva(ReservaInput)
+            return await dataSources.reservasAPI.createReserva(reservaInput);
             },
-    },*/
+    },
     
 };
    

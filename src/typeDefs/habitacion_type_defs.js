@@ -19,9 +19,7 @@ type HabitacionDetail {
     idHotel: Int!
 }
 
-input CredentialsInput {
-    idHabitacion: Int!
-}    
+ 
 
 type Query {
     habitacionDetailById(idHabitacion: Int!): HabitacionDetail!

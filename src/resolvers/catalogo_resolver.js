@@ -3,7 +3,6 @@ const catalogoResolver = {
         catalogoDetailById: (_, {catalogoId}, { dataSources}) => {
             
             return dataSources.catalogoAPI.getCatalogo(catalogoId)
-          
     
         },
     },

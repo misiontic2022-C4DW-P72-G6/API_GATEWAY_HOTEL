@@ -17,9 +17,9 @@ const reservasTypeDefs = gql`
     input ReservaInput{
         idReserva: Int!
         nombrecuentaUsuario: Int!
-        fechaReserva: String!
-        fechaInicio: String!
-        fechaFin : String!
+        fechaReserva: String
+        fechaInicio: String
+        fechaFin : String
         personas : Int!
         idHotel :Int!
         habitacion : String!
@@ -30,7 +30,9 @@ const reservasTypeDefs = gql`
     reservaDetailById(idReserva: Int!): Reserva!
     
     } 
-   `;
+    extend type Mutation {
+        crearReserva(reserva: ReservaInput):Reserva!
+    }`;
 
 
 

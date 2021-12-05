@@ -21,9 +21,7 @@ type CatalogoDetail {
 }
 
 
-input CredentialsInput {
-    idHotel: Int!
-}
+
 type Query {
     catalogoDetailById(catalogoId: Int!): CatalogoDetail
 }

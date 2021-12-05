@@ -11,8 +11,6 @@ class CatalogoAPI extends RESTDataSource {
         return await this.post(`/catalogo/`, catalogo);
     }
     async getCatalogo(catalogoId) {
-        console.log("*****************++++++++++++++++++++++++++++++++");
-        console.log(catalogoId);
         return await this.get(`/catalogo/${catalogoId}/`);
     }
 
@@ -21,8 +19,6 @@ class CatalogoAPI extends RESTDataSource {
         return await this.post(`/habitacion/`, habitacion);
     }
     async getHabitacion(idHabitacion) {
-        console.log("zzzzzzzzzzzzzzz");
-        console.log(idHabitacion);
         return await this.get(`/habitacion/${idHabitacion}/`);
     }
 
